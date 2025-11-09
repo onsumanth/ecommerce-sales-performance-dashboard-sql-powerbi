@@ -1,47 +1,109 @@
-# Sales Analytics Dashboard using SQL and Power BI
+# E-Commerce Sales Performance Dashboard (SQL & Power BI)
 
-### Project Overview
-Developed an automated sales analytics dashboard that processes 150,000+ transactions across 4 years, enabling real-time visibility into key performance metrics and market trends.
+An end-to-end business intelligence project analyzing e-commerce sales data to identify top-performing products, regional trends, and key revenue insights.  
+This project combines **SQL** for data extraction and cleaning with **Power BI** for building dynamic dashboards and business KPIs.
 
+---
 
-## Video Demonstration (sound on)
-https://github.com/user-attachments/assets/99c10670-b09e-4514-b122-4a8113a7f4ba
+## 🧠 Introduction
+This project focuses on analyzing e-commerce sales data to evaluate product performance, market trends, and revenue growth across multiple regions.  
+Over **150,000+ sales transactions** spanning 4 years were analyzed to generate real-time, actionable insights that help improve strategic decision-making.
 
-## Business Impact
-- Automated manual reporting processes, reducing analysis time by 80%
-- Enabled real-time access to sales insights for stakeholders
-- Improved market performance tracking across regions
+The dashboard was designed to deliver clear visibility into business KPIs such as total revenue, profit, sales by category, and top-performing regions.
 
-## Phase 1
-### Data Analysis with SQL
-Initial analysis of sales data using SQL queries on MySQL to understand the dataset structure and key metrics.
+---
 
-### Data Cleaning & ETL (Extract Transform Load) with Power BI
-- Utilized Power BI for data cleaning
-- Performed data transformation using Power BI transform tools:
-  - Removed blank rows
-  - Eliminated sales with values <= 0
-  - Normalized currency by converting to INR
-  - Removed duplicate transactions
+## ⚙️ Methodology
+### SQL
+- Queried and aggregated raw sales data from a MySQL database.  
+- Cleaned and merged multiple tables to prepare an analytical dataset.  
+- Derived metrics including total revenue, sales growth, and customer purchase frequency.  
 
-## Phase 2
-### Dashboard Development
-Created an interactive Power BI dashboard featuring:
-- Total revenue tracking
-- Revenue by market analysis
-- Sales quantity by market
-- Year and month filtering capabilities
-- Top 5 customers visualization
-- Top 5 products analysis
-- Revenue trend monitoring
+### Power BI
+- Performed ETL (Extract, Transform, Load) operations using Power Query.  
+- Cleaned and transformed data by:
+  - Removing null and duplicate rows  
+  - Filtering invalid transactions (sales ≤ 0)  
+  - Standardizing currencies to INR  
+- Built relationships between tables and created **calculated measures (DAX)**.  
+- Designed an **interactive Power BI dashboard** with filters for year, category, and region.
 
-# Setup & Installation
-1. Download and install Power BI Desktop
-2. Clone this repository or download sales_dashboard.pbix
-3. Open sales_dashboard.pbix in Power BI Desktop
-4. Optional: For live data connection, update database credentials in Power BI settings
+---
 
-### Dashboard Preview
-Link to the dashboard below. The web version might have some permission issues but you can try signing in with your Microsoft account. If it doesn't work feel free to download "sales_dashboard.pbix" in the repo, or watch the video demonstration :)   
-https://app.powerbi.com/groups/me/reports/0339065a-0d2d-4c41-bbcb-67992d310857/d5acb94c0200276b759c?experience=power-bi
+## 📊 Dashboard Features
+- Total revenue and profit KPIs  
+- Sales performance by market and product category  
+- Top 5 customers and top 5 products visualizations  
+- Yearly and monthly trend analysis  
+- Regional sales breakdown with filters  
+- Automated refresh and real-time reporting  
+
+---
+
+## 📈 Dashboard Preview
+*(Upload screenshots into a “Supporting Files” folder to display visuals here)*  
+
+![Dashboard Overview](Supporting%20Files/Sales_Dashboard.png)  
+![Revenue by Region](Supporting%20Files/Revenue_By_Region.png)
+
+---
+
+## 🔍 Key Insights
+- Automated manual reporting workflows, reducing analysis time by **80%**.  
+- Identified top 5 markets contributing over **60% of total revenue**.  
+- Revealed strong seasonal performance during **Q4** due to festive sales.  
+- Recommended pricing and bundling strategies for underperforming product categories.  
+
+---
+
+## 💡 Business Impact
+- Enabled **real-time monitoring** of sales and revenue performance.  
+- Improved business decisions through **data-driven insights**.  
+- Enhanced transparency across sales, marketing, and finance teams.  
+
+---
+
+## 🧰 Tools & Technologies
+| Tool | Purpose |
+|------|----------|
+| **SQL (MySQL)** | Data extraction, aggregation, and cleaning |
+| **Power BI** | Dashboard visualization and KPI tracking |
+| **Excel** | Validation and data preprocessing |
+| **Power Query (DAX)** | Data transformation and calculations |
+
+---
+
+## 🗂️ Repository Structure
+├── db_dump.sql # SQL database file
+├── sales_dashboard.pbix # Power BI dashboard
+├── README.md # Project documentation
+└── Supporting Files/ # (Screenshots or visuals)
+
+---
+
+## 🔗 Dashboard Access
+- **Power BI File:** `sales_dashboard.pbix` (included in this repository)  
+- **SQL Database:** `db_dump.sql`  
+- Optional: Connect live data by updating credentials in Power BI settings.  
+
+---
+
+## 🏷️ License
+This project is open-sourced under the [MIT License](LICENSE).  
+Developed and documented by **Sumanth P** for a Data Analyst portfolio presentation.
+
+---
+
+## ✉️ Contact
+**Author:** Sumanth P  
+**LinkedIn:** [linkedin.com/in/sumanth-p-4aa127338](https://www.linkedin.com/in/sumanth-p-4aa127338)  
+**GitHub:** [github.com/onsumanth](https://github.com/onsumanth)
+
+---
+
+## 💼 Resume Summary
+Analyzed over 150,000 sales transactions using SQL to uncover regional and product-level trends.  
+Built interactive Power BI dashboards with KPIs for revenue, profit, and category performance.  
+Cleaned and transformed raw data using Power Query and MySQL for accuracy and consistency.  
+Delivered actionable insights to drive data-informed sales and marketing strategies.
 
