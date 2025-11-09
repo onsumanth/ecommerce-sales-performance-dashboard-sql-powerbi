@@ -57,10 +57,13 @@ The Power BI dashboard includes:
 ---
 
 ## 📂 Repository Structure
-├── db_dump.sql # SQL database file
-├── sales_dashboard.pbix # Power BI dashboard
-├── README.md # Project documentation
-└── Supporting Files/ # (Optional) Dashboard screenshots
+```
+├── db_dump.sql                 # SQL database file
+├── sales_dashboard.pbix        # Power BI dashboard
+├── README.md                   # Project documentation
+└── Supporting Files/            # (Optional) Dashboard screenshots
+```
+
 
 ---
 
@@ -82,3 +85,4 @@ Analyzed over 150,000 sales transactions using SQL to uncover regional and produ
 Built interactive Power BI dashboards with KPIs for revenue, profit, and category performance.  
 Cleaned and transformed raw data using Power Query and MySQL for accuracy and consistency.  
 Delivered actionable insights to drive data-informed sales and marketing strategies.
+
